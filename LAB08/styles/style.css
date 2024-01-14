@@ -1,0 +1,53 @@
+/*GLOBAL*/
+:root{
+    --couleurJaune:
+}
+.container{
+    font-family: monospace;
+}
+
+/*HEADER*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px; ;
+}
+
+header img{
+    width: 300px;
+}
+
+header h3{
+    color: var(--couleurJaune);
+}
+
+/*CARROUSEL*/
+.carrousel{
+    position: relative;
+    overflow: hidden;
+}
+
+.carrousel .images{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 600px;
+}
+
+.slider-item{
+    width: 100%;
+   object-fit: cover;
+   flex-shrink:0 ;
+}
+
+.fleches{
+    position: absolute;
+    top: 50%;
+    color: var(--couleurJaune);
+    cursor: pointer;
+    padding-left: 10px;
+}
+#droite{
+    float: right;
+}
